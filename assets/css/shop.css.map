@@ -1,0 +1,1 @@
+{"version":3,"sources":["shop.styl","shop.css"],"names":[],"mappings":"AAAA;EACC,iBAAA;CCCA","file":"shop.css","sourcesContent":["body\r\n\tbackground blue","body {\n  background: #00f;\n}\n"]}

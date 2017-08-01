@@ -18,6 +18,7 @@ Used technologies
 -	laravel-elixir-browsersync-official
 -	laravel-elixir-stylus
 -	jquery
+-	jeet
 	
 Commands
 
