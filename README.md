@@ -35,3 +35,12 @@ Commands
 		-	js is comliped from /assets/js/jpublic.js to /assets/jpublic.js
 -	gulp watch --production
 	-	Makes the same as watch, but also minifies css and js
+-	gulp sprites
+	-	Makes sprite from /assets/images/sprites folder (JPG and PNG)
+	-	Creates /assets stylus/sprite.styl file
+
+
+
+Sprite usage
+-	by Stylus mixin sprite($s-{sprite-name}) 
+-	mixin is defined in /assets/stylus/mixins.styl		
