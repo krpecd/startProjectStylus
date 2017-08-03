@@ -1,10 +1,10 @@
-Start project for website with gulp
+# Start project for website with gulp
 
 
 
 
 
-Installing project
+## Installing project
 
 -	navigate to {Project-folder} via cmd
 -	run command 
@@ -12,7 +12,7 @@ Installing project
 -	and then run 
 	npm install
 
-Used technologies
+## Used technologies
 -	laravel-elixir (https://laravel.com/docs/5.3/elixir)
 -	laravel-elixir-webpack-official
 -	laravel-elixir-browsersync-official
@@ -20,7 +20,7 @@ Used technologies
 -	jquery
 -	jeet
 	
-Commands
+## Commands
 
 -	gulp
 	-	compiles js and css just once
@@ -41,6 +41,6 @@ Commands
 
 
 
-Sprite usage
+## Sprite usage
 -	by Stylus mixin sprite($s-{sprite-name}) 
 -	mixin is defined in /assets/stylus/mixins.styl		
