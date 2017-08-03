@@ -18,8 +18,9 @@
 -	laravel-elixir-browsersync-official
 -	laravel-elixir-stylus
 -	jquery
--	jeet
--	gulp.spritesmith
+-	jeet (http://jeet.gs/)
+-	gulp.spritesmith (https://github.com/twolfson/gulp.spritesmith)
+-	gulp-imagemin (https://github.com/sindresorhus/gulp-imagemin)
 	
 ## Commands
 
@@ -39,9 +40,11 @@
 -	gulp sprite
 	-	Makes sprite from /assets/images/sprites folder (JPG and PNG)
 	-	Creates /assets stylus/sprite.styl file
+-	gulp images
+	-	Minify images in folder /assets/images/	
 
 
 
 ## Sprite usage
 -	by Stylus mixin sprite($s-{sprite-name}) 
--	mixin is defined in /assets/stylus/mixins.styl		
+-	mixin is defined in /assets/stylus/mixins.styl

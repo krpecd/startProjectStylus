@@ -51,3 +51,16 @@ gulp.task('sprite', function() {
     spriteData.img.pipe(gulp.dest('assets/images/')); // output path for the sprite
     spriteData.css.pipe(gulp.dest('assets/stylus')); // output path for the CSS
 });
+
+
+
+
+//Images minification
+
+const imagemin = require('gulp-imagemin');
+
+gulp.task('images', () =>
+    gulp.src('assets/images/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('assets/images/'))
+);
