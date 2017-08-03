@@ -9,7 +9,3 @@ window._ = require('lodash');
 window.$ = window.jQuery = require('jquery');
 
 
-
-$(document).ready(function(){
-	$('h1').css('color', 'red')
-})

@@ -11,11 +11,13 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp.spritesmith": "^6.5.1",
     "jeet": "^7.1.0",
     "jquery": "^3.2.1",
     "laravel-elixir": "^6.0.0-15",
     "laravel-elixir-browsersync-official": "^1.0.0",
     "laravel-elixir-stylus": "^2.0.3",
-    "laravel-elixir-webpack-official": "^1.0.10"
+    "laravel-elixir-webpack-official": "^1.0.10",
+    "stylus-normalize": "^3.0.3"
   }
 }

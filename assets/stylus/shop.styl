@@ -1,12 +1,44 @@
 
+
+@import '../../node_modules/stylus-normalize/normalize'
 @import '../../node_modules/jeet/styl'
 
+@import 'variables'
+@import 'mixins'
+
+@import 'sprite'
+
+.container
+	center()
+.left
+	span(1)
+.right
+	span(1)	
+
+@media (min-width: tabletWidth)
+	.container
+		center(containerWidthTablet)
+	.left
+		span(1/4, $cycle: 2)
+	.right	
+		span(2/4, $offset: 1/4, $cycle: 2)
 
 
-body
-	background blue
+
+@media (min-width: desktopWidth)
+	.container
+		center(containerWidthDesktop)
+	.left
+		span(4/21, $cycle: 2)
+	.right	
+		span(15/21, $offset: 2/21, $cycle: 2)
+	
+	.gallery
+		center(containerWidthDesktop)
+		.img
+			span(1/4, $cycle: 4)
+			
 
 h1
-	center(800px)
-
-
+	.icon
+		sprite($s-pen)
