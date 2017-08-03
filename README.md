@@ -6,11 +6,11 @@
 
 ## Installing project
 
--	navigate to {Project-folder} via cmd
--	run command 
+-	navigate to {Project-folder} via cmd or cli
+```
 	npm install -g gulp-cli
--	and then run 
 	npm install
+```
 
 ## Used technologies
 -	laravel-elixir (https://laravel.com/docs/5.3/elixir)
