@@ -53,5 +53,8 @@
 
 
 ## Sprite usage
--	by Stylus mixin sprite($s-{sprite-name}) 
--	mixin is defined in /assets/stylus/mixins.styl
+-	with Stylus mixin 
+```
+	sprite($s-sprite-name) 
+```
+-	sprite() mixin is defined in /assets/stylus/mixins.styl
