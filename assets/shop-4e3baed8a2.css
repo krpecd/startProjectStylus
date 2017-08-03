@@ -246,10 +246,12 @@ th {
     clear: both;
   }
   .left:nth-child(n) {
+    margin-right: 0%;
     float: left;
     clear: none;
   }
   .left:nth-child(2n) {
+    margin-right: 0%;
     float: right;
   }
   .left:nth-child(2n + 1) {
@@ -259,8 +261,8 @@ th {
     float: left;
     clear: none;
     text-align: inherit;
-    width: 50%;
-    margin-left: 25%;
+    width: 75%;
+    margin-left: 0%;
     margin-right: 0%;
   }
   .right::after {
@@ -269,10 +271,12 @@ th {
     clear: both;
   }
   .right:nth-child(n) {
+    margin-right: 0%;
     float: left;
     clear: none;
   }
   .right:nth-child(2n) {
+    margin-right: 0%;
     float: right;
   }
   .right:nth-child(2n + 1) {
@@ -299,7 +303,7 @@ th {
     float: left;
     clear: none;
     text-align: inherit;
-    width: 19.047619047619047%;
+    width: 25%;
     margin-left: 0%;
     margin-right: 0%;
   }
@@ -322,8 +326,8 @@ th {
     float: left;
     clear: none;
     text-align: inherit;
-    width: 71.42857142857143%;
-    margin-left: 9.523809523809524%;
+    width: 75%;
+    margin-left: 0%;
     margin-right: 0%;
   }
   .right::after {
@@ -380,12 +384,15 @@ th {
     clear: both;
   }
 }
+h1 {
+  text-align: center;
+}
 h1 .icon {
   background-image: url("images/sprite.png");
-  background-position: -512px -512px;
-  width: 512px;
-  height: 512px;
+  background-position: 0px 0px;
+  width: 16px;
+  height: 16px;
   display: inline-block;
 }
 
-/*# sourceMappingURL=/shop-3d4c272662.css.map */
+/*# sourceMappingURL=/shop-4e3baed8a2.css.map */

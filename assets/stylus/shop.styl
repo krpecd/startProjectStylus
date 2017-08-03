@@ -1,12 +1,17 @@
-
-
+//Normalize
 @import '../../node_modules/stylus-normalize/normalize'
-@import '../../node_modules/jeet/styl'
 
+//Variables and mixins
 @import 'variables'
 @import 'mixins'
 
+//Grid system
+@import '../../node_modules/jeet/styl'
+
+//sprites
 @import 'sprite'
+
+
 
 .container
 	center()
@@ -19,9 +24,9 @@
 	.container
 		center(containerWidthTablet)
 	.left
-		span(1/4, $cycle: 2)
+		column(1/4, $cycle: 2, $gutter: 0)
 	.right	
-		span(2/4, $offset: 1/4, $cycle: 2)
+		column(3/4, $cycle: 2, $gutter: 0)
 
 
 
@@ -29,9 +34,9 @@
 	.container
 		center(containerWidthDesktop)
 	.left
-		span(4/21, $cycle: 2)
-	.right	
-		span(15/21, $offset: 2/21, $cycle: 2)
+		span(1/4, $cycle: 2, $gutter: 0)
+	.right
+		span(3/4, $cycle: 2, $gutter: 0)
 	
 	.gallery
 		center(containerWidthDesktop)
@@ -40,5 +45,6 @@
 			
 
 h1
+	text-center()
 	.icon
-		sprite($s-pen)
+		sprite($s-crayon)

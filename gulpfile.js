@@ -29,23 +29,24 @@ elixir((mix) => {
 
 
 
+
+
 //Image sprites
-
-
 const spritesmith = require('gulp.spritesmith');
 
 gulp.task('sprite', function() {
     var spriteData = 
-        gulp.src('assets/images/sprites/*.*') // source path of the sprite images
-            .pipe(spritesmith({
-                imgName: 'sprite.png',
-                cssName: 'sprite.styl',
-                cssFormat: 'stylus',
-                cssTemplate: 'stylus.template.mustache',
-                cssVarMap: function(sprite) {
-                    sprite.name = 's-' + sprite.name
-                },
-            }));
+    
+    gulp.src('assets/images/sprites/*.*') // source path of the sprite images
+        .pipe(spritesmith({
+            imgName: 'sprite.png',
+            cssName: 'sprite.styl',
+            cssFormat: 'stylus',
+            cssTemplate: 'stylus.template.mustache',
+            cssVarMap: function(sprite) {
+                sprite.name = 's-' + sprite.name
+            },
+        }));
 
     spriteData.img.pipe(gulp.dest('assets/images/')); // output path for the sprite
     spriteData.css.pipe(gulp.dest('assets/stylus')); // output path for the CSS

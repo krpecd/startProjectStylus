@@ -1,4 +1,4 @@
-# Start project for website with gulp
+# Start project for website with Gulp and Stylus
 
 
 
@@ -19,6 +19,7 @@
 -	laravel-elixir-stylus
 -	jquery
 -	jeet
+-	gulp.spritesmith
 	
 ## Commands
 
@@ -35,7 +36,7 @@
 		-	js is comliped from /assets/js/jpublic.js to /assets/jpublic.js
 -	gulp watch --production
 	-	Makes the same as watch, but also minifies css and js
--	gulp sprites
+-	gulp sprite
 	-	Makes sprite from /assets/images/sprites folder (JPG and PNG)
 	-	Creates /assets stylus/sprite.styl file
 
