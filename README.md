@@ -12,6 +12,13 @@
 	npm install
 ```
 
+##Setup
+-	Configure browserSyncProxy in gulpfile.js
+```
+	elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
+```
+
+
 ## Used technologies
 -	laravel-elixir (https://laravel.com/docs/5.3/elixir)
 -	laravel-elixir-webpack-official
@@ -29,10 +36,10 @@
 -	gulp watch
 	-	watching for file changes Stylus and JS 
 		-	compiling stylus to CSS and JS (ES2015 to ES5)
-		-	versioning files
+		-	versioning CSS file
 		-	running browsersync
 		-	css is compiled from /assets/stylus/shop.styl to /assets/shop.css
-		-	css is versioned int /assets/ 
+		-	css is versioned into /assets/ 
 		-	informations about CSS version are in /assets/rev-manifest.json
 		-	js is comliped from /assets/js/jpublic.js to /assets/jpublic.js
 -	gulp watch --production
