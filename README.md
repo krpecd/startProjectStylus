@@ -12,7 +12,7 @@
 	npm install
 ```
 
-##Setup
+## Setup
 -	Configure browserSyncProxy in gulpfile.js
 ```
 	elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
