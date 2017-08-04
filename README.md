@@ -8,15 +8,15 @@
 
 -	navigate to {Project-folder} via cmd or cli
 ```
-	git clone https://github.com/krpecd/startProjectStylus.git
-	npm install -g gulp-cli
-	npm install
+git clone https://github.com/krpecd/startProjectStylus.git
+npm install -g gulp-cli
+npm install
 ```
 
 ## Setup
 -	Configure browserSyncProxy in gulpfile.js
 ```
-	elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
+elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
 ```
 
 
@@ -85,28 +85,37 @@
 ```
 
 ### Sprites usage
-with Stylus mixin 
+##### with Stylus mixin 
 ```
-	sprite($s-sprite-name) 
+sprite($s-sprite-name) 
 ```
+##### generates this css 
+```
+background-image: url("images/sprite-name.png");
+background-position: positionOfSprite;
+width: spriteWidth;
+height: spriteHeight;
+display: inline-block;
+```
+
 sprite() mixin is defined in /assets/stylus/mixins.styl
 
 ### Helper mixins
 
-text helpers
+##### text helpers
 ```
-	text-center()
-	text-left()
-	text-right()
-	text-uppercase()
-	text-lowercase()
-	text-capitalize()
+text-center()
+text-left()
+text-right()
+text-uppercase()
+text-lowercase()
+text-capitalize()
 ```
 
-block helpers
+##### block helpers
 ```
-	center-block()
-	pull-right()
-	pull-left()
-	clearfix()
+center-block()
+pull-right()
+pull-left()
+clearfix()
 ```
