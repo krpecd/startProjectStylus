@@ -1,3 +1,4 @@
+//sprites
 spriteWidth($sprite) {
   width: $sprite[4];
 }
@@ -23,7 +24,7 @@ sprite($sprite) {
 }
 
 
-
+//helpers
 text-center(){
 	text-align center
 }
@@ -36,14 +37,34 @@ text-right(){
 	text-align right
 }
 
+text-uppercase(){
+  text-transform uppercase
+}
+
+text-lowercase(){
+  text-transform lowercase
+}
+
+text-capitalize(){
+  text-transform capitalize
+}
+
 center-block(){
 	display block
 	margin-left auto
 	margin-right auto
 }
 
-// Mixin itself
-cf() {
+pull-left(){
+  float left
+}
+
+pull-right(){
+  float right
+}
+
+//Clearfix
+clearfix() {
   &:before,
   &:after {
     content: " ";

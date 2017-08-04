@@ -11,40 +11,45 @@
 //sprites
 @import 'sprite'
 
+//components
+@import 'components/typography'
+@import 'components/gallery'
 
 
 .container
 	center()
-.left
-	span(1)
-.right
-	span(1)	
-
-@media (min-width: tabletWidth)
-	.container
+	@media (min-width: tabletWidth)
 		center(containerWidthTablet)
-	.left
+	@media (min-width: desktopWidth)
+		center(containerWidthDesktop)
+		
+.container__left
+	column(1)
+	background lightGrey
+	margin 0 0 10px 0
+	.inner
+		padding 15px
+	@media (min-width: tabletWidth)
 		column(1/4, $cycle: 2, $gutter: 0)
-	.right	
+	@media (min-width: desktopWidth)
+		column(1/4, $cycle: 2, $gutter: 0)
+
+.container__right
+	span(1)	
+	background softGrey
+	margin 0 0 10px 0
+	.inner
+		padding 15px
+	@media (min-width: tabletWidth)
 		column(3/4, $cycle: 2, $gutter: 0)
+	@media (min-width: desktopWidth)
+		column(8/12, $offset: 1/12, $cycle: 2, $gutter: 0)
 
 
-
-@media (min-width: desktopWidth)
-	.container
-		center(containerWidthDesktop)
-	.left
-		span(1/4, $cycle: 2, $gutter: 0)
-	.right
-		span(3/4, $cycle: 2, $gutter: 0)
 	
-	.gallery
-		center(containerWidthDesktop)
-		.img
-			span(1/4, $cycle: 4)
+	
 			
 
-h1
-	text-center()
-	.icon
-		sprite($s-crayon)
+
+	
+

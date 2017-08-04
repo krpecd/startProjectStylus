@@ -10,14 +10,19 @@ const elixir = require('laravel-elixir');
 	//CSS
 		elixir.config.css.outputFolder = "";
 
+    //Autoprefixing CSS
+        elixir.config.css.autoprefix.options.browsers = ['> 1%'];
+
+    //Versioning    
+        elixir.config.versioning.buildFolder = "";
+
 	//JS
 		elixir.config.js.outputFolder = "";
-
-	//Versioning	
-		elixir.config.versioning.buildFolder = "";
+	
 
 	//browserSync
 		elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
+
 
 
 elixir((mix) => {
