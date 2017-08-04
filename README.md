@@ -58,31 +58,31 @@
 
 ### CSS autoprefixing
 	
-	Write your CSS rules without vendor prefixes (in fact, forget about them entirely):
-	```
-	:fullscreen a {
-	    display: flex
-	}
-	```
-	Compiles into:
-	```
-	:-webkit-full-screen a {
-	    display: -webkit-box;
-	    display: flex
-	}
-	:-moz-full-screen a {
-	    display: flex
-	}
-	:-ms-fullscreen a {
-	    display: -ms-flexbox;
-	    display: flex
-	}
-	:fullscreen a {
-	    display: -webkit-box;
-	    display: -ms-flexbox;
-	    display: flex
-	}
-	```
+##### Write your CSS rules without vendor prefixes (in fact, forget about them entirely):
+```
+:fullscreen a {
+    display: flex
+}
+```
+##### Compiles into:
+```
+:-webkit-full-screen a {
+    display: -webkit-box;
+    display: flex
+}
+:-moz-full-screen a {
+    display: flex
+}
+:-ms-fullscreen a {
+    display: -ms-flexbox;
+    display: flex
+}
+:fullscreen a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+```
 
 ### Sprites usage
 with Stylus mixin 
