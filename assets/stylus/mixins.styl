@@ -1,26 +1,26 @@
 //sprites
 spriteWidth($sprite) {
-  width: $sprite[4];
+	width: $sprite[4];
 }
 
 spriteHeight($sprite) {
-  height: $sprite[5];
+	height: $sprite[5];
 }
 
 spritePosition($sprite) {
-  background-position: $sprite[2] $sprite[3];
+	background-position: $sprite[2] $sprite[3];
 }
 
 spriteImage($sprite) {
-  background-image: url(images/$sprite[8]);
+	background-image: url(images/$sprite[8]);
 }
 
 sprite($sprite) {
-  spriteImage($sprite)
-  spritePosition($sprite)
-  spriteWidth($sprite)
-  spriteHeight($sprite)
-  display inline-block
+	spriteImage($sprite)
+	spritePosition($sprite)
+	spriteWidth($sprite)
+	spriteHeight($sprite)
+	display inline-block
 }
 
 
@@ -38,15 +38,15 @@ text-right(){
 }
 
 text-uppercase(){
-  text-transform uppercase
+	text-transform uppercase
 }
 
 text-lowercase(){
-  text-transform lowercase
+	text-transform lowercase
 }
 
 text-capitalize(){
-  text-transform capitalize
+	text-transform capitalize
 }
 
 center-block(){
@@ -56,21 +56,21 @@ center-block(){
 }
 
 pull-left(){
-  float left
+	float left
 }
 
 pull-right(){
-  float right
+	float right
 }
 
 //Clearfix
 clearfix() {
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
 }

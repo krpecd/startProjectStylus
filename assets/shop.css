@@ -244,11 +244,17 @@ h2 {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
+  background: #efefef;
+  margin: 0 0 10px 0;
+  padding: 20px 0;
 }
 .gallery__img::after {
   content: '';
   display: table;
   clear: both;
+}
+.gallery__img:nth-child(odd) {
+  background: #aaa;
 }
 @media (min-width: 768px) {
   .gallery__img {

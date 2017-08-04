@@ -6,7 +6,7 @@
 
 ## Installing project
 
--	navigate to {Project-folder} via cmd or cli
+navigate to {Project-folder} via cmd or cli
 ```
 git clone https://github.com/krpecd/startProjectStylus.git
 npm install -g gulp-cli
@@ -14,7 +14,7 @@ npm install
 ```
 
 ## Setup
--	Configure browserSyncProxy in gulpfile.js
+Configure browserSyncProxy in gulpfile.js
 ```
 elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
 ```
@@ -45,7 +45,7 @@ elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
 		-	js is comliped from /assets/js/jpublic.js to /assets/jpublic.js
 -	gulp watch --production
 	-	Makes the same as watch, but also minifies css and js
--	gulp sprite
+-	gulp sprites
 	-	Makes sprite from /assets/images/sprites folder (JPG and PNG)
 	-	Creates /assets stylus/sprite.styl file
 -	gulp images
@@ -85,7 +85,7 @@ elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
 ```
 
 ### Sprites usage
-##### with Stylus mixin 
+##### This stylus mixin 
 ```
 sprite($s-sprite-name) 
 ```

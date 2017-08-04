@@ -8,6 +8,11 @@
 		
 .gallery__img
 	span(1)
+	background lightGrey
+	margin 0 0 10px 0
+	padding 20px 0 
+	&:nth-child(odd)
+		background softGrey
 	@media (min-width: tabletWidth)
 		span(1/2, $cycle: 2)
 	@media (min-width: desktopWidth)

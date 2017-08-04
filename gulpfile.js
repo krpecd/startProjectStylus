@@ -39,7 +39,7 @@ elixir((mix) => {
 //Image sprites
 const spritesmith = require('gulp.spritesmith');
 
-gulp.task('sprite', function() {
+gulp.task('sprites', function() {
     var spriteData = 
     
     gulp.src('assets/images/sprites/*.*') // source path of the sprite images
