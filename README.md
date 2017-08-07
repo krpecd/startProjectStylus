@@ -129,7 +129,7 @@ generates this css
   }
 }
 ```
-**!!!!!**If you are using retina sprites you have to have **all images** with @2x prefix
+!!!!!If you are using retina sprites you have to have **all images** with @2x prefix
 
 'mySprite' is name of the image without extension
 ___
