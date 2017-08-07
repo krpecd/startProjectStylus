@@ -15,7 +15,7 @@ npm install
 
 ## Setup
 Configure browserSyncProxy in gulpfile.js
-```
+```javascript
 elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
 ```
 
@@ -57,11 +57,11 @@ elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
 ### CSS autoprefixing
 	
 ##### Write your CSS rules without vendor prefixes (in fact, forget about them entirely):
-```
+```css
 :fullscreen a {
     display: flex
 }
-```
+```css
 ##### Compiles into:
 ```
 :-webkit-full-screen a {
@@ -85,12 +85,12 @@ ___
 ### Sprites
 
 This stylus mixin
-```
+```stylus
 sprite($mySprite) 
 ```
 
 generates this css 
-```
+```css
 background-image: url("images/sprite.png");
 background-position: positionOfSprite;
 width: spriteWidth;
@@ -101,20 +101,20 @@ display: inline-block;
 #### Retina support
 
 uncomment these lines in gulpfile.js to enable retina sprites
-```
+```javascript
 //retinaSrcFilter: 'assets/images/sprites/*@2x.png',
 //retinaImgName: 'sprite@2x.png',
 //cssTemplate: 'retina-sprites.handlebars',
 ```
 
 retina mixin 
-```
+```stylus
 retinaSprite($mySprite_group) 
 ```
 
 
 generates this css 
-```
+```css
 .mySprite {
   background-image: url("images/sprite.png");
   background-position: position of sprite;
@@ -139,7 +139,7 @@ ___
 ### Helper mixins
 
 ##### text helpers
-```
+```stylus
 text-center()
 text-left()
 text-right()
@@ -149,7 +149,7 @@ text-capitalize()
 ```
 
 ##### block helpers
-```
+```stylus
 center-block()
 pull-right()
 pull-left()
