@@ -61,9 +61,9 @@ elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
 :fullscreen a {
     display: flex
 }
-```css
-##### Compiles into:
 ```
+##### Compiles into:
+```css
 :-webkit-full-screen a {
     display: -webkit-box;
     display: flex
