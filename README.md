@@ -84,21 +84,59 @@ elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
 }
 ```
 
-### Sprites usage
-##### This stylus mixin 
+### Sprites
+
+This stylus mixin
 ```
-sprite($s-sprite-name) 
+sprite($mySprite) 
 ```
-##### generates this css 
+
+generates this css 
 ```
-background-image: url("images/sprite-name.png");
+background-image: url("images/sprite.png");
 background-position: positionOfSprite;
 width: spriteWidth;
 height: spriteHeight;
 display: inline-block;
 ```
 
-sprite() mixin is defined in /assets/stylus/mixins.styl
+#### Retina support
+
+enable by uncomment these lines in gulpfile.js
+```
+//retinaSrcFilter: 'assets/images/sprites/*@2x.png',
+//retinaImgName: 'sprite@2x.png',
+//cssTemplate: 'retina-sprites.handlebars',
+```
+
+retina mixin 
+```
+retinaSprite($mySprite_group) 
+```
+
+
+generates this css 
+```
+.mySprite {
+  background-image: url("images/sprite.png");
+  background-position: position of sprite;
+  width: spriteWidth;
+  height: spriteheight;
+  display: inline-block;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .mySprite {
+    background-image: url("images/sprite@2x.png");
+    background-size: retinaSpriteBgSize;
+  }
+}
+```
+##### If you are using retina sprites you have to have all images with @2x prefix
+
+'mySprite' is name of the image without extension
+
+
+
 
 ### Helper mixins
 

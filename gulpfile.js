@@ -46,11 +46,10 @@ gulp.task('sprites', function() {
         .pipe(spritesmith({
             imgName: 'sprite.png',
             cssName: 'sprite.styl',
-            cssFormat: 'stylus',
-            cssTemplate: 'stylus.template.mustache',
-            cssVarMap: function(sprite) {
-                sprite.name = 's-' + sprite.name
-            },
+            //retinaSrcFilter: 'assets/images/sprites/*@2x.png',
+            //retinaImgName: 'sprite@2x.png',
+            cssTemplate: 'sprites.handlebars',
+            //cssTemplate: 'retina-sprites.handlebars',
         }));
 
     spriteData.img.pipe(gulp.dest('assets/images/')); // output path for the sprite

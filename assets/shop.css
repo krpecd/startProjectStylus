@@ -178,13 +178,6 @@ th {
 h1 {
   text-align: center;
 }
-h1 .icon {
-  background-image: url("images/sprite.png");
-  background-position: 0px 0px;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-}
 h2 {
   text-align: center;
 }
@@ -500,6 +493,19 @@ h2 {
   }
   .container__right:nth-child(2n + 1) {
     clear: both;
+  }
+}
+.github {
+  background-image: url("images/sprite.png");
+  background-position: -32px 0px;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .github {
+    background-image: url("images/sprite@2x.png");
+    background-size: 64px 64px;
   }
 }
 
