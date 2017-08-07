@@ -90,7 +90,7 @@ sprite($mySprite)
 ```
 
 generates this css 
-```css
+```stylus
 background-image: url("images/sprite.png");
 background-position: positionOfSprite;
 width: spriteWidth;
