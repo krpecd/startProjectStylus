@@ -56,13 +56,13 @@ elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
 
 ### CSS autoprefixing
 	
-##### Write your CSS rules without vendor prefixes (in fact, forget about them entirely):
+Write your CSS rules without vendor prefixes (in fact, forget about them entirely):
 ```css
 :fullscreen a {
     display: flex
 }
 ```
-##### Compiles into:
+Compiles into:
 ```css
 :-webkit-full-screen a {
     display: -webkit-box;
@@ -138,7 +138,7 @@ ___
 
 ### Helper mixins
 
-##### text helpers
+text helpers
 ```stylus
 text-center()
 text-left()
@@ -148,7 +148,7 @@ text-lowercase()
 text-capitalize()
 ```
 
-##### block helpers
+block helpers
 ```stylus
 center-block()
 pull-right()
