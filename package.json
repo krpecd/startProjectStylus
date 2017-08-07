@@ -4,6 +4,7 @@
   "description": "Testing laravel elixir",
   "main": "index.js",
   "scripts": {
+    "default": "gulp watch",
     "prod": "gulp --production",
     "dev": "gulp watch"
   },

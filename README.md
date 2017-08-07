@@ -32,9 +32,8 @@ elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
 	
 ## Commands
 
+
 -	gulp
-	-	compiles js and css just once
--	gulp watch
 	-	watching for file changes Stylus and JS 
 		-	compiling stylus to CSS and JS (ES2015 to ES5)
 		-	versioning CSS file
@@ -43,14 +42,13 @@ elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
 		-	css is versioned into /assets/ 
 		-	informations about CSS version are in /assets/rev-manifest.json
 		-	js is comliped from /assets/js/jpublic.js to /assets/jpublic.js
--	gulp watch --production
+-	gulp --production
 	-	Makes the same as watch, but also minifies css and js
 -	gulp sprites
 	-	Makes sprite from /assets/images/sprites folder (JPG and PNG)
 	-	Creates /assets stylus/sprite.styl file
 -	gulp images
 	-	Minify images in folder /assets/images/	
-
 
 
 
@@ -102,7 +100,7 @@ display: inline-block;
 
 #### Retina support
 
-enable by uncomment these lines in gulpfile.js
+uncomment these lines in gulpfile.js to enable retina sprites
 ```
 //retinaSrcFilter: 'assets/images/sprites/*@2x.png',
 //retinaImgName: 'sprite@2x.png',
