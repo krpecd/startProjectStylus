@@ -33,7 +33,7 @@ elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
 ## Commands
 
 
--	gulp
+-	gulp watch
 	-	watching for file changes Stylus and JS 
 		-	compiling stylus to CSS and JS (ES2015 to ES5)
 		-	versioning CSS file
@@ -42,7 +42,7 @@ elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
 		-	css is versioned into /assets/ 
 		-	informations about CSS version are in /assets/rev-manifest.json
 		-	js is comliped from /assets/js/jpublic.js to /assets/jpublic.js
--	gulp --production
+-	gulp watch --production
 	-	Makes the same as watch, but also minifies css and js
 -	gulp sprites
 	-	Makes sprite from /assets/images/sprites folder (JPG and PNG)
