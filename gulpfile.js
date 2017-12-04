@@ -1,29 +1,14 @@
 const elixir = require('laravel-elixir');
 
-
 //Laravel elixir configuration
-
-	//Paths
+        elixir.config.sourcemaps = false;
 		elixir.config.assetsPath = "assets";
 		elixir.config.publicPath = "assets";
-
-	//CSS
 		elixir.config.css.outputFolder = "";
-
-    //Autoprefixing CSS
         elixir.config.css.autoprefix.options.browsers = ['> 1%'];
-
-    //Versioning    
         elixir.config.versioning.buildFolder = "";
-
-	//JS
-		elixir.config.js.outputFolder = "";
-	
-
-	//browserSync
+		elixir.config.js.outputFolder = "";	
 		elixir.config.browserSync.proxy = "startprojectstylus.dev.local";
-
-
 
 elixir((mix) => {
 	mix.stylus('shop.styl')
@@ -31,9 +16,6 @@ elixir((mix) => {
 		.version('assets/shop.css')
 		.browserSync()
 });
-
-
-
 
 
 //Image sprites
@@ -55,9 +37,6 @@ gulp.task('sprites', function() {
     spriteData.img.pipe(gulp.dest('assets/images/')); // output path for the sprite
     spriteData.css.pipe(gulp.dest('assets/stylus')); // output path for the CSS
 });
-
-
-
 
 //Images minification
 
